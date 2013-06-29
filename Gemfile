@@ -15,17 +15,18 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
+  gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails', '>=2.0.2'
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg', '>=0.12.2'
 end
 
+gem 'will_paginate', '~>3.0.pre2'
+gem 'execjs', '1.2.4'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
